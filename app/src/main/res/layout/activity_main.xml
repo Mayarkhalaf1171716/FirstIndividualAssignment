@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0DBE3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Academic Information View"
+        android:textColor="#E91E63"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Your Name and ID"
+        android:textColor="#E4618E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Select Your UnderGradures Degree"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnDegrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#21C5C5"
+        android:scrollbarSize="5dp" />
+
+    <Button
+        android:id="@+id/btnDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:onClick="btnDegree"
+        android:text="Choose Degree"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#21C5C5" />
+
+    <EditText
+        android:id="@+id/edtExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter practical and academic experience"
+        android:textColor="#E4618E"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAddexperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="AddexperienceOnclick"
+        android:text="Add Experience"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#21C5C5" />
+
+    <TextView
+        android:id="@+id/textExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:onClick="btnSendOnclick"
+        android:text="Send"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:backgroundTint="#21C5C5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:lineSpacingMultiplier="1dp"
+            android:padding="8dp"
+            android:text="The mission of the Computer Science program is to provide students with excellent up-to-date knowledge in the fields related to computer science and information technology. This is achieved through comprehensive and continuously reviewed educational programs, research projects, and new tracks to fulfill the growing needs of certain and new skills in the field of computing. The Goals: 1-Equip students with state-of-the-art theoretical and practical background across the computer science and information technology disciplines.  2-Provide students with solid algorithmic foundations as well the required knowledge in the design and development of computer systems. 3-Provide students with the essential research skills necessary for students to continue their education after graduation. 4-Enrich students with professional skills and confidence required for hiring students in both the local and global communities. The Career oppurtunities of Computer Science: 1-Software Engineers and Developers. 2-System and Business Analysis. 3-Software Architects. 4-Web and Mobile Application Designers and Developers. 5-Database Administrators.  "
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

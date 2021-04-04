@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FirstIndividualAssignment</string>
+    <string-array name="UnderGraduatesDegrees">
+        <item> diplom </item>
+        <item>Bachelors</item>
+        <item> Master</item>
+        <item> Doctorate</item>
+    </string-array>
+</resources>
